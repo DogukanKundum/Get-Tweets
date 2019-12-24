@@ -15,16 +15,8 @@ pip install -r requirements.txt
 
 ## Components
 - **Tweet:** Model class to give some informations about a specific tweet.
-  - id (str)
-  - permalink (str)
-  - username (str)
   - text (str)
   - date (date)
-  - retweets (int)
-  - favorites (int)
-  - mentions (str)
-  - hashtags (str)
-  - geo (str)
 
 - **TweetManager:** A manager class to help getting tweets in **Tweet**'s model.
   - getTweets (**TwitterCriteria**): Return the list of tweets retrieved by using an instance of **TwitterCriteria**. 
