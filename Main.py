@@ -15,11 +15,11 @@ def main():
         for item in t:
             entry = {'date': [item.date], 'tweet': [item.text]}
             dat = dat.append([pd.DataFrame(entry)], ignore_index=True)
-        dat.to_csv('tweets_turktelekom3.csv', encoding='utf-8')
+        dat.to_csv('xxxx.csv', encoding='utf-8')
         dat.head(10)
 
     # Example - Get tweets by query search
-    tweetCriteria = got.manager.TweetCriteria().setQuerySearch('turktelekom lang:tr -filter:links').setSince("2019-09-01").setUntil("2019-09-27").setMaxTweets(60000)
+    tweetCriteria = got.manager.TweetCriteria().setQuerySearch('xxxx lang:tr -filter:links').setSince("2019-09-01").setUntil("2019-09-27").setMaxTweets(6)
     tweet = got.manager.TweetManager.getTweets(tweetCriteria)
 
     printTweet("### Example - Get tweets by query search [europe refugees]", tweet)
