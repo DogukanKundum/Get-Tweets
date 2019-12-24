@@ -58,3 +58,9 @@ pip install -r requirements.txt
     print tweet.text
 ```
 
+##### Thanks Jefferson Henrique : 
+original repo : 
+```
+https://github.com/Jefferson-Henrique/GetOldTweets-python
+```
+
